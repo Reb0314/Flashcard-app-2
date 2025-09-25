@@ -12,7 +12,7 @@
 - [x] Add selectable multiple choice answers beneath the card
    - [ ] Change the background color of the multiple choice answers when clicked to indicate whether the question waanswered correctly
 - [ ] Further customize and style the card
-
+## GIF
 <img src="flashcard.gif" width=200><br>
 
 
