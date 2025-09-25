@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/green1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/flashcard_question"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@color/green"
+        android:text="Alo sante?"
+        android:textSize="40sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/flashcard_answer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="Yon aplikasyon pou tout moun"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:background="@color/black"
+        android:layout_below="@id/flashcard_question"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/choice1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashcard_question"
+        android:layout_marginTop="44dp"
+        android:visibility="visible"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:background="@color/green2"
+        android:text="Yon aplikasyon pou timoun"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/choice2"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Yon aplikasyon pou moun ki rive lwen lekol"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_below="@id/choice1"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@color/green2"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/choice3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yon aplikasyon pou tout moun"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_below="@id/choice2"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@color/black"
+        android:background="@color/green2"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/eye_hide"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/eye_ide_"
+        android:layout_below="@id/choice3"
+        android:layout_alignParentBottom="true"
+        android:foregroundGravity="right"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/eye_show"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/eye_show_"
+        android:layout_below="@id/choice3"
+        android:layout_alignParentBottom="true"
+        android:foregroundGravity="right"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/addplus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/addplus"
+        android:layout_below="@id/choice3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:foregroundGravity="right"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
